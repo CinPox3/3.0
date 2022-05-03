@@ -5,7 +5,7 @@
 /* nav */
 
 .nav__hero{
-    background: rgb(92, 88, 88);
+    background: rgb(0, 0, 0);
     height: 80px;
     color: #fff;
 }
@@ -13,23 +13,7 @@
 .nav__title{
     font-size: 1.5em;
     font-weight: 900;
-    animation-duration: 5s;
-    animation-name: slidein;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
-
-@keyframes slidein {
-    from {
-      margin-left: 50%;
-      width: 300%
-    }
-  
-    to {
-      margin-leftt: 0%;
-      width: 100%;
-    }
-  }
 
 .hero__container{
     display: flex;
@@ -84,7 +68,7 @@
         position: fixed;
         top: 80px;
         bottom: 0;
-        background: rgb(90, 84, 84);
+        background: rgb(0, 0, 0);
         width: 100%;
         left: 0;
         display: flex;
@@ -107,11 +91,12 @@
     padding: 25px;
     height: 500px;
     text-align: center;
-    background: linear-gradient( rgba(255,255,255,0), rgb(83, 94, 95)), url(../images/chicharron.png);
+    background: linear-gradient( rgba(255,255,255,0), rgb(0, 0, 0)), url(../images/s.png);
     color: #fff;
-    background-size: contain;
+    background-size: cover;
     justify-content: center;
     align-items: center;
+    height: auto;
 }
 
 .cuerpo__title{
@@ -119,8 +104,13 @@
     color: rgb(255, 255, 255);
 }
 
+.cuerpo__6{
+    font-size: smaller;
+    padding: 100px;
+}
+
 .cuerpo2{
-    background: linear-gradient( rgba(83, 94, 95), rgb(83, 94, 95));
+    background: linear-gradient( rgb(0, 0, 0), rgb(0, 0, 0));
     padding: 50px;
     color: #fff;
     text-align: center;
@@ -128,4 +118,15 @@
 
 .imagen-cuerpo{
     position: relative;
+}
+
+.img__svg{
+    color: #fff;
+    filter: opacity(0.4) drop-shadow(0 0 0 rgb(255, 0, 0));
+}
+
+.elsresk{
+    border-radius: 50%;
+    width: 100px;
+
 }
